@@ -1,0 +1,39 @@
+.consultation {
+    min-height: 355px;
+    &__title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__form {
+        margin-top: 70px;
+        min-height: 185px;
+        border: 1px solid #898989;
+    }
+    &__wrapper {
+        position: relative;
+        margin-top: 80px;
+        input {
+            width: 290px;
+            height: 45px;
+            border: 1px solid rgba(0, 0, 0, 0.21);
+            background-color: #ffffff;
+            border-radius: 20px;
+            padding: 10px;
+            margin-right: 10px;
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+        }
+    }
+    &__img {
+        position: relative;
+        margin-bottom: 10px;
+        img {
+            position: absolute;
+            display: block;
+            left: 50%;
+            margin-left: -51px;
+            background-color: white;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.main {
+    min-height: 680px;
+    padding: 20px 55px 82px 80px;
+    background: url(../../img/airplane.png) center center/cover no-repeat;
+    h1 {
+        color: $main-color;
+        font-size: 55px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h2 {
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__devider {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 27px;
+    }
+    &__line-left {
+        width: 350px;
+        height: 1px;
+        background-color: #ffffff;
+        margin-top: 3px;
+    }
+    
+    &__dot {
+        width: 6px;
+        height: 6px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        margin-right: 10px;        
+        margin-left: 10px;
+    }
+    &__line-right {
+        width: 350px;
+        height: 1px;
+        background-color: #ffffff;
+        margin-top: 3px;
+    }
+    &__images {
+        height: 60px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    &__text {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: center;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+    }
+    &__item {
+        padding-right: 15px;
+        border-right: 1px dotted #fff;
+        list-style-type: none;
+        &:nth-last-child(1) {
+            border-right: none;
+        }
+        a {
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 16.71px;
+            text-decoration: none;
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        span {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            text-align: right;
+        }
+        a {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.agent{
+    min-height: 342px;
+    padding: 58px 0 75px 0;
+    background: url(../../img/wall.png) center center/cover no-repeat;
+    &__title {
+        margin-top: 20px;
+        color: #ffffff;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 23px;
+        text-align: center;
+    }
+    &__text {
+        margin-top: 23px;
+        color: #ffffff;
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 27px;
+        text-align: center;
+    }
+    &__icon {
+        display: block;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,21 @@
+.work {
+    padding: 50px 0 55px 0;
+    &__item {
+        margin-top: 30px;
+    }
+    &__subtitle {
+        margin-top: 25px;
+        color: #ec644b;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__text {
+        margin-top: 10px;
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: center;
+    }
+}

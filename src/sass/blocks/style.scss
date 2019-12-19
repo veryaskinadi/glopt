@@ -1,0 +1,18 @@
+@import 'src/sass/libs/fonts.scss';
+
+*{
+    font-family: Roboto, sans-serif;
+    outline: none;
+}
+@import 'src/sass/base/variables.scss';
+@import 'src/sass/blocks/main.scss';
+@import 'src/sass/blocks/button.scss';
+@import 'src/sass/blocks/title.scss';
+@import 'src/sass/blocks/advantage.scss';
+@import 'src/sass/blocks/work.scss';
+@import 'src/sass/blocks/devider.scss';
+@import 'src/sass/blocks/agent.scss';
+@import 'src/sass/blocks/catalog.scss';
+@import 'src/sass/blocks/consultation.scss';
+@import 'src/sass/blocks/manager.scss';
+@import 'src/sass/blocks/scheme';

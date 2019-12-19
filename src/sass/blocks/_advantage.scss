@@ -1,0 +1,22 @@
+.advantage {
+    min-height: 620px;
+    padding: 55px 0 50px 0;
+    background: url(../../img/advantage.png) center center/cover no-repeat;
+    &__block {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    &__logo {
+        margin-right: 15px;
+    }
+    &__subtitle {
+        color: #ec644b;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    &__text {
+        font-weight: 300;
+    }
+    
+}
