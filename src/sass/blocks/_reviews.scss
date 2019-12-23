@@ -1,0 +1,55 @@
+.reviews {
+    min-height: 470px;
+    padding: 51px 0 65px 0;
+    &__slick {
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__name {
+        font-size: 14px;
+        line-height: 22.01px;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 10px;
+    }
+    &__descr {
+        font-size: 14px;
+        line-height: 22.01px;
+        font-weight: 300;
+        text-align: justify;
+        margin-top: 10px;
+    }
+    &__slide {
+        padding: 10px;
+        opacity: .2;
+        transform: scale(0.7);
+        transition: all 0.5s;
+    }
+    .slick-center {
+        opacity: 1;
+        transform: scale(1);
+    }
+    .slick-arrow {
+        position: absolute;
+        top: 47px;  
+        width: 40px;
+        height: 40px;
+        z-index: 5;
+        border: none;
+        &:focus {
+            outline:none;
+        }
+    }
+    .slick-prev {
+        left: 40%;
+        background: url("../../img/left.svg") center center no-repeat;
+    }
+    .slick-next {
+        right: 40%;
+        background: url("../../img/right.svg") center center no-repeat;
+    }
+}
+
