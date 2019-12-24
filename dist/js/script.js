@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#form').validate({
+    $('#form-consultation').validate({
         rules:{
             name:{
                 required: true,
@@ -22,38 +22,39 @@ $(document).ready(function() {
                 required: "Пожалуйста, введите номер телефона"
             },
             email: {
-                required: "Пожалуйста, введите адрес электронной почты",
+                required: "Пожалуйста, введите ваш e-mail",
                 email: "Неправильно введен адрес почты"
             }
         },
+        errorClass: 'validationError'
     });
     
     $('.reviews__slick').slick({
         centerMode: true,
-        centerPadding: '60px',
+        centerPadding: '0px',
         slidesToShow: 3,
         responsive: [
             {
-            breakpoint: 768,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
-            }
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
             },
             {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
-            }
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
             }
         ],
-        prevArrow: '<button type="button" class="slick-prev"><img src("../img/left.svg")></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src("../img/right.svg")></button>'
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>'
     });
     
 });

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#form').validate({
+    $('#form-consultation').validate({
         rules:{
             name:{
                 required: true,
@@ -26,7 +26,43 @@ $(document).ready(function() {
                 email: "Неправильно введен адрес почты"
             }
         },
-        errorClass: 'validationError'
+        errorClass: 'consultation__Error'
+    });
+
+    $('#form-questions').validate({
+        rules:{
+            name:{
+                required: true,
+                minlength: 2
+            },
+            phone: {
+                required: true
+            },
+            email:{
+                required: true,
+                email: true
+            },
+            text:{
+                required: true
+            }
+        },
+        messages: {
+            name: {
+                required: "Пожалуйста, введите свое имя",
+                minlength: jQuery.validator.format("Минимальное количество символов {0}")
+            },
+            phone: {
+                required: "Пожалуйста, введите номер телефона"
+            },
+            email: {
+                required: "Пожалуйста, введите ваш e-mail",
+                email: "Неправильно введен адрес почты"
+            },
+            text: {
+                required: "Пожалуйста, введите сообщение"
+            }
+        },
+        errorClass: 'questions__Error'
     });
     
     $('.reviews__slick').slick({

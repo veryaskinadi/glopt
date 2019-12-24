@@ -248,14 +248,16 @@
     <section class="consultation">
         <div class="container">
             <h2 class="consultation__title">Заказать бесплатную консультацию</h2>
-            <div class="consultation__img">
-                <img src="icons/consultation.png" alt="img">
+            <div class="consultation__img-block">
+                <img class="consultation__img" src="icons/consultation.png" alt="img">
             </div>
-            <form id="form" class="consultation__form" action="#">
+            <form id="form-consultation" class="consultation__form" action="#">
                 <div class="row consultation__wrapper col-md-10 offset-md-1">
-                    <div><input name="name" placeholder="Ваше имя" type="text"></div>
-                    <div><input name="phone" placeholder="Ваш номер телефона" type="text"></div>
-                    <div><input name="email" placeholder="Ваш e-mail" type="text"></div>
+                    <div><input class="consultation__input" name="name" placeholder="Ваше имя" type="text"></div>
+                    <div>
+                        <input class="consultation__input" name="phone" placeholder="Ваш номер телефона" type="text">
+                    </div>
+                    <div><input class="consultation__input" name="email" placeholder="Ваш e-mail" type="text"></div>
                 </div>
                 <button class="but but_center but_consultation">Отправить заявку</button>
             </form>
@@ -348,6 +350,32 @@
             </div>
         </div>
     </div>
+    </section>
+
+    <section class="questions">
+        <div class="container">
+            <div class="questions__block">
+                <div class="questions__header">
+                    <div class="questions__title">Остались вопросы?</div>
+                    <div class="questions__subtitle">Напишите нам!</div>
+                </div>
+                <div class="questions__body">
+                    <form id="form-questions" class="questions__form" action="#">
+                        <div class="questions__input-container">
+                            <div class="questions__inputs">
+                                <div><input class="questions__input" name="name" placeholder="Ваше имя" type="text"></div>
+                                <div><input class="questions__input" name="phone" placeholder="Ваш номер телефона" type="text"></div>
+                                <div><input class="questions__input" name="email" placeholder="Ваш e-mail" type="text"></div>
+                            </div>
+                            <div class="questions__textarea-message">
+                                <textarea class="questions__textarea" name="text" placeholder="Сообщение..."></textarea>
+                            </div>
+                        </div>
+                        <button class="but but_center but_questions">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
