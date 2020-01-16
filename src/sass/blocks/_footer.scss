@@ -30,5 +30,51 @@
         line-height: 24px;
         text-decoration: none;
     }
-    
+    &__devider {
+        display: block;
+        margin: 0 auto;
+        width: 1171px;
+        height: 1px;
+        opacity: 0.3;
+        background-color: #fff;
+        margin-top: 25px;
+    }
+    &__bottom {
+        display: flex;
+        margin-top: 25px;
+    }
+    &__scratch {
+        opacity: 0.6;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 17px;
+        &:hover {
+            color: #fff;
+        }
+    }
+    &__privacy-policy {
+        color: $main-color;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 17px;
+        text-decoration: underline;
+        &:hover {
+            color: $main-color;
+        }
+    }
+    &__author {
+        opacity: 0.6;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 17px;
+    }
+    &__logo-author {
+        position: relative;
+        top: -6px;
+    }
+}
+.maps {
+    min-height: 450px;
 }
