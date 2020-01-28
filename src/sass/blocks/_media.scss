@@ -1,3 +1,114 @@
-@media (max-width: 991px) {
+@media screen and (max-width: 1199px) {
+    .header {
+        &__item {
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        &__item-a {
+            font-size: 14px;
+        }
+        &__phone {
+            font-size: 12px;
+        }
+        &__contacts {
+            margin-left: 10px;
+        }
+    }
+    .but {
+        &_callme {
+            width: 130px;
+            margin-left: 10px;
+            font-size: 11px;
+        }
+    }
+    .work {
+        &__img {
+            width: 100%;
+        }
+    }
+    .consultation {
+        &__input {
+            width: 235px;
+        }
+    }
+    .footer {
+        &__h2 {
+            font-size: 13px;
+        }
+        &__phone {
+            font-size: 14px;
+        }
+        &__author {
+            font-size: 11px;
+        }
+    }
     
+}
+@media screen and (max-width: 991px) {
+    .main {
+        &__title {
+            font-size: 47px;
+        }
+        &__subtitle {
+            font-size: 29px;
+        }
+    }
+    .header {
+        &__menu {
+            margin-left: 0;
+        }
+        &__logo-img {
+            width: 80px;
+        }
+        &__item {
+            line-height: 1;
+        }
+        &__item-a {
+            font-size: 11px;
+        }
+        &__contacts {
+            display: none;
+        }
+        &__phone-lgvisible {
+            display: block;
+        }
+    }
+    .but {
+        width: 140px;
+        height: 40px;
+    }
+    .consultation {
+        margin-bottom: 50px;
+        &__wrapper {
+            margin-top: 67px;
+            flex-direction: column;
+            padding-bottom: 25px;
+        }
+        &__inputs {
+            padding-bottom: 10px;
+            margin: 0 auto;
+        }
+    }
+    .reviews {
+        .slick-next {
+            right: 35%;
+        }
+        .slick-prev {
+            left: 35%;
+        }
+    }
+    .questions {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__inputs {
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+        &__textarea {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
 }

@@ -2,14 +2,14 @@
     min-height: 680px;
     padding: 20px 0 82px 0;
     background: url(../../img/airplane.png) center center/cover no-repeat;
-    h1 {
+    &__title {
         color: $main-color;
         font-size: 55px;
         font-weight: 700;
         text-transform: uppercase;
         text-align: center;
     }
-    h2 {
+    &__subtitle {
         color: #ffffff;
         font-size: 30px;
         font-weight: 400;
@@ -68,7 +68,8 @@
         margin-left: 50px;
     }
     &__item {
-        padding-right: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
         border-right: 1px dotted #fff;
         list-style-type: none;
         &:nth-last-child(1) {
@@ -99,5 +100,14 @@
         font-weight: 700;
         line-height: 24px;
         text-decoration: none;
+    }
+    &__phone-lgvisible {
+        display: none;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration: none;
+        text-align: center;
     }
 }

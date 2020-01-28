@@ -3,7 +3,7 @@
     background: url(../../img/airplane2.png) center center/cover no-repeat;
     padding: 62px 0 79px 0;
     &__header {
-        width: 896px;
+        // width: 896px;
         height: 68px;
         background-color: #25333c;
         margin: 0 auto;
@@ -27,15 +27,14 @@
     &__body {
         padding: 18px 0 20px 0;
         margin: 0 auto;
-        width: 896px;
+        // width: 896px;
         min-height: 229px;
         background-color: rgba(255,255,255,.7);
     }
     &__input-container{
-        width: 813px;
         margin: 0 auto;
     }
-    &__inputs {
+    &__wrapper {
         display: flex;
         justify-content: space-between;
     }
