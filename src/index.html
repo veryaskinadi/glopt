@@ -65,6 +65,9 @@
 
             <button class="but but_payment">Получить расчет</button>
         </div>
+        <div class="main__hamburger">
+            <i class="fas fa-bars main__hamburger-icon"></i>
+        </div>
     </section>
     <section class="advantage">
         <div class="container">
@@ -398,22 +401,23 @@
 
     <section class="footer">
         <div class="container">
-            <div class="footer__logo">
-                <a href="#" class="col-md-1 footer__logomini">
-                    <img src="icons/logomini.png" alt="logo">
+            <div class="row footer__logo">
+                <a href="#" class="col-lg-1 col-sm-1 footer__logomini">
+                    <img class="footer__logoimg" src="icons/logomini.png" alt="logo">
                 </a>
-                <div class="footer__h2 col-md-5">Global Opt - Доставка грузов из Китая в Россию и СНГ</div>
-                <div class="footer__contacts offset-md-2 col-md-2">
+                <div class="footer__h2 col-lg-5 col-sm-5">Global Opt - Доставка грузов из Китая в Россию и СНГ</div>
+                <div class="footer__contacts offset-lg-1 col-lg-2 col-sm-2">
                     <span class="footer__span">Есть вопросы?</span>
                     <a href="tel:+79264230100" class="footer__phone">+7 (926) 423 01 00</a>
                 </div>
-                <button class="col-md-2 but but_callme">Перезвоните мне</button>
+                <a href="tel:+79264230100" class="footer__phone-smvisible">+7 (926) 423 01 00</a>
+                <button class="col-lg-2 col-sm-2 but but_callme but_mt">Перезвоните мне</button>
             </div>
             <div class="footer__devider"></div>
-            <div class="footer__bottom">
-                <a class="footer__scratch col-md-2" href="#">© 2010 Scratch.com.ua</a>
-                <a class="footer__privacy-policy offset-md-1 col-md-3" href="#">Политика конфидециальности</a>
-                <div class="footer__ps offset-md-4 col-md-2">
+            <div class="row footer__bottom">
+                <a class="footer__scratch col-lg-2 col-sm-2" href="#">© 2010 Scratch.com.ua</a>
+                <a class="footer__privacy-policy offset-lg-1 col-lg-3 offset-sm-1 col-sm-3" href="#">Политика конфидециальности</a>
+                <div class="footer__ps offset-lg-4 col-lg-2 offset-md-3 col-md-3 offset-sm-2 col-sm-4">
                     <span class="footer__author">Создание сайта:</span>
                     <img class="footer__logo-author" src="icons/logo2.png" alt="logo">
                 </div>
@@ -421,7 +425,7 @@
         </div>
     </section>
 
-
+    <script src="https://kit.fontawesome.com/f3971e6023.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/slick.min.js"></script>

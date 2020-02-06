@@ -93,4 +93,19 @@ $(document).ready(function() {
         nextArrow: '<button type="button" class="slick-next"></button>'
     });
     
+    
+    const headerMenu = document.querySelector('.header__menu'),
+    headerItem = document.querySelectorAll('.header__item'),
+    hamburger = document.querySelector('.main__hamburger');
+
+    hamburger.addEventListener('click', () => {
+        headerMenu.classList.toggle('header__menu_active');
+    });
+
+    headerItem.forEach(item => {
+        item.addEventListener('click', () => {
+            headerMenu.classList.toggle('header__menu_active');
+        })
+    })
+    
 });

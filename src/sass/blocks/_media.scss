@@ -42,6 +42,7 @@
             font-size: 11px;
         }
     }
+
     
 }
 @media screen and (max-width: 991px) {
@@ -89,6 +90,11 @@
             margin: 0 auto;
         }
     }
+    .catalog {
+        &__price {
+            font-size: 19px;
+        }
+    }
     .reviews {
         .slick-next {
             right: 35%;
@@ -109,6 +115,132 @@
             display: block;
             width: 90%;
             margin: 0 auto;
+        }
+    }
+    .footer {
+        &__h2 {
+            font-size: 10px;
+            line-height: normal;
+            padding-top: 25px;
+        }
+        &__contacts{
+            margin-top: 15px;
+        }
+        &__span {
+            font-size: 13px;
+        }
+        &__phone {
+            font-size: 10px;
+        }
+    }
+    .but {
+        font-size: 9px;
+        &_mt{
+            margin-top: 15px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .subtitle {
+        font-size: 18px;
+    }
+    .header {
+        &__item {
+            border-right: none;
+        }
+        &__menu {
+            position: fixed;
+            z-index: 2;
+            flex-direction: column;
+            align-items: left;
+            top: 0;
+            left: -100%;
+            height: 100vh;
+            padding: 20px 15px 20px 45px;
+            background-color: rgba(0,0,0,.8);
+            transition: .6s all;
+            &_active {
+                left: 0;
+            }
+        }
+        &__item-a {
+            font-size: 18px;
+        }
+        &__logo {
+            padding-left: 30px;
+        }
+    }
+    .main {
+        &__hamburger {
+            display: block;
+            position: absolute;
+            top: 6%;
+            left: 17px;
+            z-index: 5;
+        }
+        &__hamburger-icon {
+            color: $main-color;
+            font-size: 20px;
+        }
+        &__images {
+            margin-bottom: 0;
+        }
+        &__icons {
+            margin-bottom: 15px;
+        }
+        &__title {
+            font-size: 33px;
+        }
+        &__subtitle {
+            font-size: 24px;
+        } 
+    }
+    .footer {
+       &__contacts {
+           display: none;
+       }
+       &__phone-smvisible {
+           display: block;
+           &:hover {
+               color: #fff;
+           }
+       }
+       &__logoimg {
+           width: 250%;
+           padding-top: 16px;
+       }
+    }
+    .but {
+        &_mt {
+            margin: 15px auto;
+            line-height: normal;
+            font-size: 8px;
+        }
+        &_questions {
+            margin-top: 20px;
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .main {
+        &__title {
+            font-size: 28px;
+        }
+    }
+    .questions {
+        &__input {
+            width: 100%;
+        }
+    }
+    .footer {
+        &__logoimg {
+            display: none;
+        }
+        &__phone-smvisible {
+            margin-left: 10px;
+        }
+        &__ps {
+            margin-top: 10px;
         }
     }
 }
