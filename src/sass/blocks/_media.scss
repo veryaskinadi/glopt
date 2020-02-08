@@ -113,7 +113,6 @@
         }
         &__textarea {
             display: block;
-            width: 90%;
             margin: 0 auto;
         }
     }
@@ -220,6 +219,22 @@
             margin-top: 20px;
         }
     }
+    .consultation {
+        &__Error {
+            font-size: 12px;
+        }
+    }
+    .reviews {
+        &__slide {
+            transform: scale(1);
+        }
+        .slick-next {
+            right: 32%;
+        }
+        .slick-prev {
+            left: 32%;
+        }
+    }
 }
 @media screen and (max-width: 575px) {
     .main {
@@ -241,6 +256,22 @@
         }
         &__ps {
             margin-top: 10px;
+        }
+    }
+    .but {
+        &_mt {
+            margin: 15px;
+        }
+    }
+    .reviews {
+        &__slide {
+            transform: scale(1);
+        }
+        .slick-next {
+            right: 19%;
+        }
+        .slick-prev {
+            left: 19%;
         }
     }
 }

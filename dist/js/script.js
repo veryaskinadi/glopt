@@ -15,14 +15,14 @@ $(document).ready(function() {
         },
         messages: {
             name: {
-                required: "Пожалуйста, введите свое имя",
+                required: "Введите свое имя",
                 minlength: jQuery.validator.format("Минимальное количество символов {0}")
             },
             phone: {
-                required: "Пожалуйста, введите номер телефона"
+                required: "Введите номер телефона"
             },
             email: {
-                required: "Пожалуйста, введите ваш e-mail",
+                required: "Введите ваш e-mail",
                 email: "Неправильно введен адрес почты"
             }
         },
@@ -48,18 +48,18 @@ $(document).ready(function() {
         },
         messages: {
             name: {
-                required: "Пожалуйста, введите свое имя",
+                required: "Введите свое имя",
                 minlength: jQuery.validator.format("Минимальное количество символов {0}")
             },
             phone: {
-                required: "Пожалуйста, введите номер телефона"
+                required: "Введите номер телефона"
             },
             email: {
-                required: "Пожалуйста, введите ваш e-mail",
+                required: "Введите ваш e-mail",
                 email: "Неправильно введен адрес почты"
             },
             text: {
-                required: "Пожалуйста, введите сообщение"
+                required: "Введите сообщение"
             }
         },
         errorClass: 'questions__Error'
