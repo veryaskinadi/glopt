@@ -32,6 +32,11 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest("docs/js"));
 });
 
+gulp.task('libs', function() {
+    return gulp.src("src/css/libs/*.css")
+        .pipe(gulp.dest("docs/css/libs"));
+});
+
 gulp.task('fonts', function() {
     return gulp.src("src/fonts/**/*")
         .pipe(gulp.dest("docs/fonts"));
@@ -58,4 +63,4 @@ gulp.task('favicon', function() {
         .pipe(gulp.dest("docs/"));
 });
 
-gulp.task('default', gulp.parallel('watch', 'styles', 'scripts', 'html', 'fonts', 'icons', 'mailer', 'images', 'favicon'));
+gulp.task('default', gulp.parallel('watch', 'styles', 'scripts', 'libs', 'html', 'fonts', 'icons', 'mailer', 'images', 'favicon'));
