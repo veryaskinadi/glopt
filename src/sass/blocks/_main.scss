@@ -65,6 +65,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
     &__menu {
         display: flex;
         justify-content: space-between;
@@ -106,6 +107,9 @@
         font-weight: 700;
         line-height: 24px;
         text-decoration: none;
+        &:hover {
+            color: #fff;
+        }
     }
     &__phone-lgvisible {
         display: none;
